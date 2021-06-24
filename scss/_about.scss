@@ -1,0 +1,44 @@
+.about {
+  padding-top: 7.5rem;
+  position: relative;
+
+  &__image {
+    max-width: 750px;
+    max-height: 580px;
+    margin: auto;
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+      max-width: 550px;
+      max-height: auto;
+    }
+
+    @media (min-width: 1440px) {
+      position: absolute;
+      left: -30px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__container {
+    @media (min-width: 1440px) {
+      width: 45%;
+      margin-left: auto;
+      margin-top: 6rem;
+
+      h3,
+      p {
+        text-align: left;
+      }
+    }
+  }
+
+  &__container > div:first-child {
+    @media (max-width: 1200px) {
+      margin-top: 2rem;
+    }
+  }
+}

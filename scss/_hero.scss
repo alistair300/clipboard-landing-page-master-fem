@@ -1,0 +1,40 @@
+.hero {
+  background-image: url('/images/bg-header-mobile.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+
+  @media (min-width: 768px) {
+    background-image: url('/images/bg-header-desktop.png');
+  }
+
+  &__content {
+    padding-top: 6rem;
+    max-width: 700px;
+    margin: 0 auto;
+
+    @media (min-width: 1023px) {
+      padding-top: 8.125rem;
+    }
+  }
+
+  &__logo {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    margin-top: 3rem;
+
+    @media (min-width: 1024px) {
+      font-size: 2.625rem;
+    }
+  }
+}
